@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.NewClientFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="left"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#000" />
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addressTextInputLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="textPostalAddress"
+                    android:hint="Enter Address"
+                    android:ems="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/acLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Air Conditioners"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp" >
+
+
+            <TextView
+                android:id="@+id/hpACTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0.5 hp AC"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hpACEditView5Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/hpACEditView5Hrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/hpACTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="1hp AC"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hpACEditView1Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/hpACEditView1Hrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/hpACTextView15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1.5hp AC"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hpACEditView15Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/hpACEditView15Hrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/hpACTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2hp AC"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/hpACEditView2Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/hpACEditView2Hrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/row_2">
+
+            <TextView
+                android:id="@+id/bulbLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Bulb"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/bulbTextViewESL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Energy save Light "
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bulbEditViewESLQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/bulbEditViewESLHrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/bulbTextViewTL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tube Light"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bulbEditViewTLQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/bulbEditViewTLHrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/bulbTextView60"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="60 Walt"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bulbEditView60Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/bulbEditView60Hrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/bulbTextView100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="100 Walt"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bulbEditView100Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/bulbEditView100Hrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/bulbTextView200"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="200 Walt"
+                android:textColor="@color/navigationBarColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bulbEditView200Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/bulbEditView200Hrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fanLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Fan"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fanTextViewCF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ceiling Fan"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fanEditViewCFQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/fanEditViewCFHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fanTextViewSF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Standing Fan"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/fanEditViewSFQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/fanEditViewSFHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fanTextViewBSF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Big Standing Fan"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/fanEditViewBSFQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/fanEditViewBSFHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/othersLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Other Appliances"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Television"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/tvEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/tvEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/rdTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Radio"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/rdEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/rdEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/dcTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Decoder"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/dcEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/dcEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/dvdTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="DVD"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/dvdEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/dvdEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/htTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Home Theatre"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/htEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/htEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/csTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Complete Desktop computer"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/csEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/csEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Laptop computer"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/lpEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/lpEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/wdTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Water Dispenser"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/wdEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/wdEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/dfTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Deep Freezer"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/dfEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/dfEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/refrigeratorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Refrigerator"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/refrigeratorEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/refrigeratorEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/wmTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Washing Machine"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/wmEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/wmEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/hTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Heater"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/hEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/hEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/ovTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Oven"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/ovEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/ovEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/mtTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Microwave / Toaster"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/mtEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/mtEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/vcTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Vacuum Cleaner"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/vcEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/vcEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/wpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Water Pump"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/wpEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/wpEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/ironTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Iron"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/ironEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/ironEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/ecTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Electric Cooker"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/ecEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/ecEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/fbTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Food Blender"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/fbEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/fbEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/phoneChargerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cell Phone Charger"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/phoneChargerEditViewQty"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Quantity"
+                android:text="0"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/phoneChargerEditViewHrs"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:hint="Hours"
+                android:text="0"
+                android:textColor="#000"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Submit"
+                android:layout_weight="3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
